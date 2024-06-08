@@ -1,3 +1,8 @@
+:root{
+  --cor-background-amarelo: #faf8c5;
+  --cor-background-branco: #fff;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,13 +11,30 @@
 
 body{
   width: 100%;
+  padding: 1em;
+  background: var(--cor-background-amarelo); 
 }
 
-h2{
+.parte{
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: var(--cor-background-branco);
+}
+
+.corpo-pagina__texto-titulo{
   display: flex;
   justify-content: center;
 }
 
+.corpo-pagina__texto-sinopse{
+  padding: 0.5em ;
+}
+
 .corpo-pagina__img{
-  max-width: 200px;
+  padding: 0.5em 0 0 0;
+  max-width: 40%
 }
