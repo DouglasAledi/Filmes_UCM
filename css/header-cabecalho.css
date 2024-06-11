@@ -1,0 +1,18 @@
+/* Header */
+
+.cabecalho{
+  padding: 1.5em 0;
+}
+
+/* Menu Hamburguer */
+
+.cabecalho-hamburguer__lista{
+  display: none;
+}
+
+#cabecalho-hamburguer:checked ~ .cabecalho-hamburguer__lista{
+  display: block;
+  display: flex;
+  justify-content: space-around;
+}
+

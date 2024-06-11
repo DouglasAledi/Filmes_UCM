@@ -1,6 +1,11 @@
+@import url(./css/hamburguer.css);
+
 :root{
   --cor-background-amarelo: #faf8c5;
   --cor-background-branco: #fff;
+  --cor-background-preto: #000;
+  --cor-texto-preto: #000;
+  --cor-texto-branco: #fff;
   
 }
 
