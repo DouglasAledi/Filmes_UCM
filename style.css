@@ -1,9 +1,8 @@
-@import url(./css/hamburguer.css);
-
 :root{
   --cor-background-amarelo: #faf8c5;
   --cor-background-branco: #fff;
   --cor-background-preto: #000;
+  --cor-background-cinza: #3c3c3c;
   --cor-texto-preto: #000;
   --cor-texto-branco: #fff;
   
@@ -11,14 +10,27 @@
 
 *{
   margin: 0;
-  padding: 0; 
+  padding: 0;
   border: 0;
 }
 
 body{
   width: 100%;
   padding: 1em;
-  background: var(--cor-background-amarelo); 
+
+  background: var(--cor-background-cinza);
+}
+
+.atencao{
+  border-radius: 20px;
+  background: var(--cor-background-preto);
+  border-bottom: 0.5em solid var(--cor-background-cinza);
+}
+
+.parte{
+  background: var(--cor-background-preto);
+  border-radius: 20px;
+  border-bottom: 0.5em solid var(--cor-background-cinza);
 }
 
 .parte{
@@ -27,17 +39,30 @@ body{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
 
-  background: var(--cor-background-branco);
+.corpo-pagina{
+  color: var(--cor-texto-branco);
 }
 
 .corpo-pagina__texto-titulo{
   display: flex;
   justify-content: center;
+  text-align: center;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .corpo-pagina__texto-sinopse{
   padding: 0.5em ;
+  display: flex;
+  text-align: center;
+
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .corpo-pagina__img{
